@@ -57,6 +57,10 @@ body {
   font-size: 2rem;
 }
 
+.four {
+  font-size: 2rem;
+}
+
 /* .four .text-box {
   width: 600px;
   margin: 0 auto;
@@ -233,6 +237,7 @@ body {
 
 .nine .verse {
   font-size: 1rem;
+  padding: 0px 5px;
 }
 
 #replay {
