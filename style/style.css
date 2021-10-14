@@ -48,16 +48,16 @@ body {
   height: auto;
 }
 
-.two {
+/* .two {
   font-size: 1.2rem;
   font-weight: lighter;
-}
+} */
 
 .three {
   font-size: 3rem;
 }
 
-.four .text-box {
+/* .four .text-box {
   width: 600px;
   margin: 0 auto;
   border: 3px solid #aaa;
@@ -83,25 +83,25 @@ body {
   background-color: rgb(21, 161, 237);
   padding: 5px 8px;
   border-radius: 3px;
-}
+} */
 
 .five p {
-  font-size: 2rem;
+  font-size: 3rem;
   position: absolute;
   left: 0;
   right: 0;
 }
 
-.idea-3 strong {
+.idea-2 strong {
   padding: 3px 5px;
   border-radius: 3px;
   display: inline-block;
 }
 
-.five .idea-5 {
-  font-size: 4rem;
-}
+.five .idea-2 {
+  font-size: 5rem;
 
+}
 .idea-5 span,
 .idea-6 span,
 .wish-hbd span {
@@ -124,8 +124,8 @@ body {
 
 .six .hat {
   position: absolute;
-  width: 80px;
-  top: -35px;
+  width: 100px;
+  top: 125px;
   left: 41.5%;
   /* transform: scale(0.1); */
 }
@@ -241,7 +241,7 @@ body {
 
 @media screen and (max-height: 800px) {
   .six .hat {
-    left: 37%;
+    left: 50.5%;
   }
 }
 
@@ -262,14 +262,14 @@ body {
     width: 90%;
   }
 
-  .four .text-box {
+  /* .four .text-box {
     width: 90%;
   }
 
   .text-box .fake-btn {
     right: 5px;
     bottom: -38px;
-  }
+  } */
 
   .idea-5 span {
     display: block;

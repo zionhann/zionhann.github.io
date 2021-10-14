@@ -1,12 +1,12 @@
 // Animation Timeline
 const animationTimeline = () => {
   // Spit chars that needs to be animated individually
-  const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
+  // const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
 
-  textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
-    .split("")
-    .join("</span><span>")}</span`;
+  // textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
+  //   .split("")
+  //   .join("</span><span>")}</span`;
 
   hbd.innerHTML = `<span>${hbd.innerHTML
     .split("")
@@ -36,10 +36,10 @@ const animationTimeline = () => {
       opacity: 0,
       y: 10
     })
-    .from(".two", 0.4, {
-      opacity: 0,
-      y: 10
-    })
+    // .from(".two", 0.4, {
+    //   opacity: 0,
+    //   y: 10
+    // })
     .to(
       ".one",
       0.7,
@@ -49,15 +49,15 @@ const animationTimeline = () => {
       },
       "+=2.5"
     )
-    .to(
-      ".two",
-      0.7,
-      {
-        opacity: 0,
-        y: 10
-      },
-      "-=1"
-    )
+    // .to(
+    //   ".two",
+    //   0.7,
+    //   {
+    //     opacity: 0,
+    //     y: 10
+    //   },
+    //   "-=1"
+    // )
     .from(".three", 0.7, {
       opacity: 0,
       y: 10
@@ -70,48 +70,48 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10
       },
-      "+=2"
+      "+=2.5"
     )
-    .from(".four", 0.7, {
-      scale: 0.2,
-      opacity: 0
-    })
-    .from(".fake-btn", 0.3, {
-      scale: 0.2,
-      opacity: 0
-    })
-    .staggerTo(
-      ".hbd-chatbox span",
-      0.5,
-      {
-        visibility: "visible"
-      },
-      0.05
-    )
-    .to(".fake-btn", 0.1, {
-      backgroundColor: "rgb(127, 206, 248)"
-    })
-    .to(
-      ".four",
-      0.5,
-      {
-        scale: 0.2,
-        opacity: 0,
-        y: -150
-      },
-      "+=0.7"
-    )
+    // .from(".four", 0.7, {
+    //   scale: 0.2,
+    //   opacity: 0
+    // })
+    // .from(".fake-btn", 0.3, {
+    //   scale: 0.2,
+    //   opacity: 0
+    // })
+    // .staggerTo(
+    //   ".hbd-chatbox span",
+    //   0.5,
+    //   {
+    //     visibility: "visible"
+    //   },
+    //   0.05
+    // )
+    // .to(".fake-btn", 0.1, {
+    //   backgroundColor: "rgb(127, 206, 248)"
+    // })
+    // .to(
+    //   ".four",
+    //   0.5,
+    //   {
+    //     scale: 0.2,
+    //     opacity: 0,
+    //     y: -150
+    //   },
+    //   "+=0.7"
+    // )
     .from(".idea-1", 0.7, ideaTextTrans)
     .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
     .from(".idea-2", 0.7, ideaTextTrans)
     .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(".idea-3", 0.7, ideaTextTrans)
-    .to(".idea-3 strong", 0.5, {
+    .from(".idea-2 strong", 0.5, {
       scale: 1.2,
       x: 10,
       backgroundColor: "rgb(21, 161, 237)",
       color: "#fff"
     })
+    .from(".idea-3", 0.7, ideaTextTrans)
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
     .from(".idea-4", 0.7, ideaTextTrans)
     .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
@@ -278,21 +278,21 @@ const animationTimeline = () => {
 
 // Import the data to customize and insert them into page
 const fetchData = () => {
-  fetch("customize.json")
-    .then(data => data.json())
-    .then(data => {
-      Object.keys(data).map(customData => {
-        if (data[customData] !== "") {
-          if (customData === "imagePath") {
-            document
-              .getElementById(customData)
-              .setAttribute("src", data[customData]);
-          } else {
-            document.getElementById(customData).innerText = data[customData];
-          }
-        }
-      });
-    });
+  // fetch("customize.json")
+  //   .then(data => data.json())
+  //   .then(data => {
+  //     Object.keys(data).map(customData => {
+  //       if (data[customData] !== "") {
+  //         if (customData === "imagePath") {
+  //           document
+  //             .getElementById(customData)
+  //             .setAttribute("src", data[customData]);
+  //         } else {
+  //           document.getElementById(customData).innerText = data[customData];
+  //         }
+  //       }
+  //     });
+  // });  
 };
 
 // Run fetch and animation in sequence
