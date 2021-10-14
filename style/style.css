@@ -54,7 +54,7 @@ body {
 } */
 
 .three {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 /* .four .text-box {
@@ -86,10 +86,18 @@ body {
 } */
 
 .five p {
-  font-size: 3rem;
+  font-size: 2.5rem;
   position: absolute;
   left: 0;
   right: 0;
+}
+
+.five .idea-1 {
+  font-size: 2rem;
+}
+
+.five .idea-2 {
+  font-size: 3rem;
 }
 
 .idea-2 strong {
@@ -98,10 +106,6 @@ body {
   display: inline-block;
 }
 
-.five .idea-2 {
-  font-size: 5rem;
-
-}
 .idea-5 span,
 .idea-6 span,
 .wish-hbd span {
@@ -225,6 +229,10 @@ body {
 .nine p {
   font-size: 2rem;
   font-weight: lighter;
+}
+
+.nine .verse {
+  font-size: 1rem;
 }
 
 #replay {
